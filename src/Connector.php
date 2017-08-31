@@ -23,9 +23,10 @@ class Connector
      * @see https://developers.coinbase.com/docs/wallet/permissions for a list of permissions
      * @param bool $redirectUri The redirect uri
      * @param string $state A secret string to pass along with the request
+     * @param string $scope The permission scope
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function requestAccess($redirectUri, $state)
+    public function requestAccess($redirectUri, $state, $scope)
     {
         return redirect(
             $this->authorizeURI
@@ -33,7 +34,7 @@ class Connector
             . '&client_id=' . $this->clientID
             . '&redirect_uri=' . $redirectUri
             . '&state=' . $state
-            . '&scope=wallet:deposits:create,wallet:accounts:read'
+            . '&scope=' . $scope
         );
     }
 
