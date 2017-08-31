@@ -1,6 +1,6 @@
 <?php
 
-namespace gustavtrenwith\coinbase_connector;
+namespace GustavTrenwith\Coinbase;
 
 use Illuminate\Support\Facades\Facade;
 
