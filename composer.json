@@ -3,7 +3,7 @@
     "description": "A Connector package to handle the handshake during the OAuth2 part of the Coinbase Connect API",
     "keywords": ["laravel", "gustavtrenwith", "coinbase", "php", "oauth2"],
     "license": "MIT License",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
           "name": "Gustav Trenwith",
