@@ -18,6 +18,6 @@ class CoinbaseConnectorFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'coinbase_connector';
+        return 'CoinbaseConnector';
     }
 }

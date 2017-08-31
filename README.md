@@ -17,13 +17,13 @@ Then run `composer update`
 
 Then register the service providers and Facades in `config/app.php`
 ```
-GustavTrenwith\Coinbase\CoinbaseConnectorProvider::class,
+GustavTrenwith\Coinbase\CoinbaseConnectorServiceProvider::class,
 ```
 ```
-'coinbase_connector' => GustavTrenwith\Coinbase\CoinbaseConnectorFacade::class,
+'CoinbaseConnector' => GustavTrenwith\Coinbase\CoinbaseConnectorFacade::class,
 ```
 
-Now you can use the  ```coinbase_connector``` facade anywhere in your application
+Now you can use the  ```CoinbaseConnector``` facade anywhere in your application
 
 ### Add the following environment variables to the `.env` file
 
